@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Management System</title>
+</head>
+<body>
+
+    <h1>Student Task Management System</h1>
+
+    <section>
+        <h2>Add New Task</h2>
+
+        <form>
+            <label for="task-title">Task Title:</label>
+            <input type="text" id="task-title" name="task-title" required>
+
+            <br><br>
+
+            <label for="task-description">Task Description:</label>
+            <textarea id="task-description" name="task-description"></textarea>
+
+            <br><br>
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline">
+
+            <br><br>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="pending">Pending</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Add Task</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Task List</h2>
+
+        <ul id="task-list">
+            <li>No tasks added yet.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
